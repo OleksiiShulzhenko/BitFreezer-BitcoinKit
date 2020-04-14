@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BitFreezer-BitcoinKit_Example' do
+  pod 'BitFreezer-BitcoinKit', :path => '../'
+
+  target 'BitFreezer-BitcoinKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
