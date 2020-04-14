@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'BitFreezer-BitcoinKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of BitFreezer-BitcoinKit.'
+  s.summary          = 'Bitcoin derivatives Library for Swift.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,20 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'Bitcoin, BitcoinCash(ABC) and Dash wallet toolkit for Swift. This is a full implementation of wallet creation, restore, send, receive transactions, and more.'
                        DESC
 
   s.homepage         = 'https://github.com/OleksiiShulzhenko/BitFreezer-BitcoinKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'OleksiiShulzhenko' => 'shulalexex@gmail.com' }
   s.source           = { :git => 'https://github.com/OleksiiShulzhenko/BitFreezer-BitcoinKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'BitFreezer-BitcoinKit/Classes/**/*'
+  s.source_files = 'Source/**/*.swift'
   
-  # s.resource_bundles = {
-  #   'BitFreezer-BitcoinKit' => ['BitFreezer-BitcoinKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.swift_version = '5'
+  
+  s.dependency 'OpenSslKit.swift', '~> 1.0'
+  s.dependency 'Secp256k1Kit.swift', '~> 1.0'
 end

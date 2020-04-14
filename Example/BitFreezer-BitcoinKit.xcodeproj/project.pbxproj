@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		48BC477D4AF566984B424153 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		48BC477D4AF566984B424153 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5DDD998F94F63B978B1C19BC /* Pods-BitFreezer-BitcoinKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitFreezer-BitcoinKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-BitFreezer-BitcoinKit_Example/Pods-BitFreezer-BitcoinKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* BitFreezer-BitcoinKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BitFreezer-BitcoinKit_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		82BE931438195C5838A9F1D6 /* Pods-BitFreezer-BitcoinKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitFreezer-BitcoinKit_Example.release.xcconfig"; path = "Target Support Files/Pods-BitFreezer-BitcoinKit_Example/Pods-BitFreezer-BitcoinKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9B6E6D89A0ADDAE7FC02E88F /* Pods-BitFreezer-BitcoinKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitFreezer-BitcoinKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-BitFreezer-BitcoinKit_Tests/Pods-BitFreezer-BitcoinKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D88EF16C800713F6D089173F /* Pods_BitFreezer_BitcoinKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitFreezer_BitcoinKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E324A58A76F3D5AB3C55D870 /* BitFreezer-BitcoinKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "BitFreezer-BitcoinKit.podspec"; path = "../BitFreezer-BitcoinKit.podspec"; sourceTree = "<group>"; };
+		E324A58A76F3D5AB3C55D870 /* BitFreezer-BitcoinKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "BitFreezer-BitcoinKit.podspec"; path = "../BitFreezer-BitcoinKit.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E8C25DB16063CEBA8B377A4D /* Pods_BitFreezer_BitcoinKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitFreezer_BitcoinKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FA770B1CAF7A4A75D4E02E /* Pods-BitFreezer-BitcoinKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitFreezer-BitcoinKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BitFreezer-BitcoinKit_Tests/Pods-BitFreezer-BitcoinKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F3107C218C13BF85BF5436CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F3107C218C13BF85BF5436CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				E9FA770B1CAF7A4A75D4E02E /* Pods-BitFreezer-BitcoinKit_Tests.debug.xcconfig */,
 				9B6E6D89A0ADDAE7FC02E88F /* Pods-BitFreezer-BitcoinKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = F8PC5YP3UQ;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = F8PC5YP3UQ;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -419,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -478,6 +480,7 @@
 			baseConfigurationReference = 5DDD998F94F63B978B1C19BC /* Pods-BitFreezer-BitcoinKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F8PC5YP3UQ;
 				INFOPLIST_FILE = "BitFreezer-BitcoinKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +496,7 @@
 			baseConfigurationReference = 82BE931438195C5838A9F1D6 /* Pods-BitFreezer-BitcoinKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F8PC5YP3UQ;
 				INFOPLIST_FILE = "BitFreezer-BitcoinKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -507,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9FA770B1CAF7A4A75D4E02E /* Pods-BitFreezer-BitcoinKit_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = F8PC5YP3UQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B6E6D89A0ADDAE7FC02E88F /* Pods-BitFreezer-BitcoinKit_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = F8PC5YP3UQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
