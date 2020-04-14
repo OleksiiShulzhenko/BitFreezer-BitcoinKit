@@ -1,0 +1,6 @@
+framework module Pods_BitFreezer_BitcoinKit_Tests {
+  umbrella header "Pods-BitFreezer-BitcoinKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

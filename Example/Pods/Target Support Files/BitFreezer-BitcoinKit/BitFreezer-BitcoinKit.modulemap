@@ -1,0 +1,6 @@
+framework module BitFreezer_BitcoinKit {
+  umbrella header "BitFreezer-BitcoinKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

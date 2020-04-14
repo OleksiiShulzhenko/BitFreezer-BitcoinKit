@@ -1,0 +1,16 @@
+PODS:
+  - BitFreezer-BitcoinKit (0.1.0)
+
+DEPENDENCIES:
+  - BitFreezer-BitcoinKit (from `../`)
+
+EXTERNAL SOURCES:
+  BitFreezer-BitcoinKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BitFreezer-BitcoinKit: 21992416bafacc7001778f9f502b6768bae7c56a
+
+PODFILE CHECKSUM: c5349337a33624567f944e26cc43de014baf6f12
+
+COCOAPODS: 1.9.1
