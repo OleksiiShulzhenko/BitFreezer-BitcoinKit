@@ -1,7 +1,7 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BitFreezer-BitcoinKit"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BitFreezer-BitcoinKit" "${PODS_CONFIGURATION_BUILD_DIR}/OpenSslKit.swift" "${PODS_CONFIGURATION_BUILD_DIR}/Secp256k1Kit.swift"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BitFreezer-BitcoinKit/BitFreezer_BitcoinKit.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "BitFreezer_BitcoinKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BitFreezer-BitcoinKit/BitFreezer_BitcoinKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/OpenSslKit.swift/OpenSslKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Secp256k1Kit.swift/Secp256k1Kit.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "BitFreezer_BitcoinKit" -framework "OpenSslKit" -framework "Secp256k1Kit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

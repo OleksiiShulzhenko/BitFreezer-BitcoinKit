@@ -1,6 +1,10 @@
+platform :ios, '11.0'
+
 use_frameworks!
 
 target 'BitFreezer-BitcoinKit_Example' do
+  pod 'OpenSslKit.swift', '~> 1.0'
+  pod 'Secp256k1Kit.swift', '~> 1.0'
   pod 'BitFreezer-BitcoinKit', :path => '../'
 
   target 'BitFreezer-BitcoinKit_Tests' do

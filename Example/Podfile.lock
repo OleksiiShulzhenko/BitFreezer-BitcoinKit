@@ -1,16 +1,29 @@
 PODS:
-  - BitFreezer-BitcoinKit (0.1.0)
+  - BitFreezer-BitcoinKit (0.1.0):
+    - OpenSslKit.swift (~> 1.0)
+    - Secp256k1Kit.swift (~> 1.0)
+  - OpenSslKit.swift (1.2)
+  - Secp256k1Kit.swift (1.0)
 
 DEPENDENCIES:
   - BitFreezer-BitcoinKit (from `../`)
+  - OpenSslKit.swift (~> 1.0)
+  - Secp256k1Kit.swift (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - OpenSslKit.swift
+    - Secp256k1Kit.swift
 
 EXTERNAL SOURCES:
   BitFreezer-BitcoinKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BitFreezer-BitcoinKit: 21992416bafacc7001778f9f502b6768bae7c56a
+  BitFreezer-BitcoinKit: 05a66325865e485bd7ba7678c4e2087c43632608
+  OpenSslKit.swift: 168b059e3438c21994a3e9fe6c5648df96660d94
+  Secp256k1Kit.swift: 93b1bfbb8909c12605666cc3b1e59d1d1fde7322
 
-PODFILE CHECKSUM: c5349337a33624567f944e26cc43de014baf6f12
+PODFILE CHECKSUM: 4407c851591c19ede97703abc4b43a39b7d1de23
 
 COCOAPODS: 1.9.1

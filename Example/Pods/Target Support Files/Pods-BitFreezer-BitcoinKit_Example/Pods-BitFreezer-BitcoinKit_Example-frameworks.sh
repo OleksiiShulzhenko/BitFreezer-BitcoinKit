@@ -198,9 +198,13 @@ fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/BitFreezer-BitcoinKit/BitFreezer_BitcoinKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/OpenSslKit.swift/OpenSslKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Secp256k1Kit.swift/Secp256k1Kit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/BitFreezer-BitcoinKit/BitFreezer_BitcoinKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/OpenSslKit.swift/OpenSslKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Secp256k1Kit.swift/Secp256k1Kit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

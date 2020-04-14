@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BitFreezer_BitcoinKit
 
 class ViewController: UIViewController {
 

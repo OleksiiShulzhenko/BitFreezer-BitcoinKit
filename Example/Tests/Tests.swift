@@ -1,5 +1,5 @@
 import XCTest
-import BitFreezer-BitcoinKit
+import BitFreezer_BitcoinKit
 
 class Tests: XCTestCase {
     

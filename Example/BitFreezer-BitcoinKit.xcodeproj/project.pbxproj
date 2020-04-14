@@ -272,10 +272,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BitFreezer-BitcoinKit_Example/Pods-BitFreezer-BitcoinKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BitFreezer-BitcoinKit/BitFreezer_BitcoinKit.framework",
+				"${BUILT_PRODUCTS_DIR}/OpenSslKit.swift/OpenSslKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Secp256k1Kit.swift/Secp256k1Kit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitFreezer_BitcoinKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSslKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Secp256k1Kit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
