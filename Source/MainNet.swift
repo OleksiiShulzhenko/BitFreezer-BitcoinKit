@@ -7,24 +7,24 @@
 
 import Foundation
 
-class MainNet: INetwork {
+public class MainNet: INetwork {
 
-    let name = "bitcoin-main-net"
-    let bundleName = "BitcoinKit"
+    public let name = "bitcoin-main-net"
+    public let bundleName = "BitcoinKit"
 
-    let pubKeyHash: UInt8 = 0x00
-    let privateKey: UInt8 = 0x80
-    let scriptHash: UInt8 = 0x05
-    let bech32PrefixPattern: String = "bc"
-    let xPubKey: UInt32 = 0x0488b21e
-    let xPrivKey: UInt32 = 0x0488ade4
-    let magic: UInt32 = 0xf9beb4d9
-    let port: UInt32 = 8333
-    let coinType: UInt32 = 0
-    let sigHash: SigHashType = .bitcoinAll
-    var syncableFromApi: Bool = true
+    public let pubKeyHash: UInt8 = 0x00
+    public let privateKey: UInt8 = 0x80
+    public let scriptHash: UInt8 = 0x05
+    public let bech32PrefixPattern: String = "bc"
+    public let xPubKey: UInt32 = 0x0488b21e
+    public let xPrivKey: UInt32 = 0x0488ade4
+    public let magic: UInt32 = 0xf9beb4d9
+    public let port: UInt32 = 8333
+    public let coinType: UInt32 = 0
+    public let sigHash: SigHashType = .bitcoinAll
+    public var syncableFromApi: Bool = true
 
-    let dnsSeeds = [
+    public let dnsSeeds = [
         "seed.bitcoin.sipa.be",         // Pieter Wuille
         "dnsseed.bluematt.me",          // Matt Corallo
         "dnsseed.bitcoin.dashjr.org",   // Luke Dashjr
@@ -33,9 +33,9 @@ class MainNet: INetwork {
         "seed.bitcoin.jonasschnelli.ch",// Jonas Schnelli
     ]
 
-    let dustRelayTxFee = 3000 // https://github.com/bitcoin/bitcoin/blob/c536dfbcb00fb15963bf5d507b7017c241718bf6/src/policy/policy.h#L50
+    public let dustRelayTxFee = 3000 // https://github.com/bitcoin/bitcoin/blob/c536dfbcb00fb15963bf5d507b7017c241718bf6/src/policy/policy.h#L50
 
-    var bip44CheckpointBlock: Block {
+    public var bip44CheckpointBlock: Block {
         Block(
                 withHeader: BlockHeader(
                         version: 2,
@@ -48,5 +48,7 @@ class MainNet: INetwork {
                 ),
                 height: 296352)
     }
+    
+    public init() {}
 
 }
