@@ -1,22 +1,22 @@
 //
-//  BitcoinKit.swift
+//  BitcoinCashKit.swift
 //  BitFreezer-BitcoinKit
 //
-//  Created by Oleksii Shulzhenko on 27.03.2020.
+//  Created by Oleksii Shulzhenko on 08.06.2020.
 //
 
 import Foundation
 import OpenSslKit
 
-public class BitcoinKit {
+public class BitcoinCashKit {
     
     public static func createWallet() -> (Address) {
         
         let entrophy = generateEntrophy()
         let mnemonic = Mnemonic.generate( entropy: entrophy)
         let seed = Mnemonic.seed(mnemonic: mnemonic)
-        
-        let network = BitcoinMainNet()
+    
+        let network = BitcoinCashMainNet()
         
         let addressConverter = Base58AddressConverter(addressVersion: network.pubKeyHash, addressScriptVersion: network.scriptHash)
         
@@ -41,11 +41,11 @@ public class BitcoinKit {
         let mnemonic = Mnemonic.generate(entropy: entrophy)
         let seed = Mnemonic.seed(mnemonic: mnemonic)
         
-        let network = BitcoinMainNet()
+        let network = BitcoinCashMainNet()
         
         let wallet = HDWallet(seed: seed, coinType: network.coinType, xPrivKey: network.xPrivKey, xPubKey: network.xPubKey)
         
-        return try! wallet.privateKey(path: "m/44'/0'/0'/0/0").raw
+        return try! wallet.privateKey(path: "m/44'/145'/0'/0/0").raw
     }
     
     public static func exportMnemonic(entrophy: Data) -> [String] {
@@ -54,7 +54,7 @@ public class BitcoinKit {
     
     public static func createTransaction(entrophy: Data, toAddress: String, value: Int, unspentOutputs: [UnspentOutput]) throws -> String {
             
-            let network = BitcoinMainNet()
+            let network = BitcoinCashMainNet()
         
             let mnemonic = Mnemonic.generate( entropy: entrophy)
             let seed = Mnemonic.seed(mnemonic: mnemonic)

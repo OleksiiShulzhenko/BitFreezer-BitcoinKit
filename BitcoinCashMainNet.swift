@@ -1,39 +1,36 @@
 //
-//  MainNet.swift
+//  BitcoinCashMainNet.swift
 //  BitFreezer-BitcoinKit
 //
-//  Created by Oleksii Shulzhenko on 25.03.2020.
+//  Created by Oleksii Shulzhenko on 08.06.2020.
 //
 
 import Foundation
 
-public class MainNet: INetwork {
+public class BitcoinCashMainNet: INetwork {
 
-    public let name = "bitcoin-main-net"
-    public let bundleName = "BitcoinKit"
+    public let name = "bitcoin-cash-main-net"
+    public let bundleName = "BitcoinCashKit"
 
+    public let maxBlockSize: UInt32 = 32 * 1024 * 1024
     public let pubKeyHash: UInt8 = 0x00
     public let privateKey: UInt8 = 0x80
     public let scriptHash: UInt8 = 0x05
-    public let bech32PrefixPattern: String = "bc"
+    public let bech32PrefixPattern: String = "bitcoincash"
     public let xPubKey: UInt32 = 0x0488b21e
     public let xPrivKey: UInt32 = 0x0488ade4
-    public let magic: UInt32 = 0xf9beb4d9
+    public let magic: UInt32 = 0xe3e1f3e8
     public let port: UInt32 = 8333
     public let coinType: UInt32 = 0
-    public let sigHash: SigHashType = .bitcoinAll
+    public let sigHash: SigHashType = .bitcoinCashAll
     public var syncableFromApi: Bool = true
 
     public let dnsSeeds = [
-        "seed.bitcoin.sipa.be",         // Pieter Wuille
-        "dnsseed.bluematt.me",          // Matt Corallo
-        "dnsseed.bitcoin.dashjr.org",   // Luke Dashjr
-        "seed.bitcoinstats.com",        // Chris Decker
-        "seed.bitnodes.io",             // Addy Yeow
-        "seed.bitcoin.jonasschnelli.ch",// Jonas Schnelli
+        "seed.bitcoinabc.org",
+        "seed-abc.bitcoinforks.org",
     ]
 
-    public let dustRelayTxFee = 3000 // https://github.com/bitcoin/bitcoin/blob/c536dfbcb00fb15963bf5d507b7017c241718bf6/src/policy/policy.h#L50
+    public let dustRelayTxFee = 1000    // https://github.com/Bitcoin-ABC/bitcoin-abc/blob/master/src/policy/policy.h#L78
 
     public var bip44CheckpointBlock: Block {
         Block(
